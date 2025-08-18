@@ -193,6 +193,23 @@ export default function JobDescription({ onNavigateToForm }: JobDescriptionProps
           🚀 <span className="ml-2">Ready to Start?</span>
         </h2>
         
+        {/* Deadline Notice */}
+        <div className="bg-red-50 border-l-4 border-red-400 p-4 mb-6">
+          <div className="flex">
+            <div className="flex-shrink-0">
+              <span className="text-red-400 text-lg">⏰</span>
+            </div>
+            <div className="ml-3">
+              <p className="text-sm text-red-700">
+                <strong>Submission Deadline:</strong> Wednesday, August 20th at 6:00 PM GMT-3
+              </p>
+              <p className="text-xs text-red-600 mt-1">
+                Late submissions will not be considered. Evaluation prioritizes candidates who submit first.
+              </p>
+            </div>
+          </div>
+        </div>
+
         <div className="space-y-4">
           <div>
             <h3 className="font-semibold text-gray-800 mb-2">Step 1: Download Challenge</h3>
@@ -201,6 +218,12 @@ export default function JobDescription({ onNavigateToForm }: JobDescriptionProps
               cd frontend-challenge<br/>
               npm install<br/>
               npm start
+            </div>
+            <div className="bg-blue-50 border border-blue-200 p-3 rounded-lg mt-3">
+              <p className="text-sm text-blue-800">
+                <strong>📖 Important:</strong> Read the complete README.md file included in the repository. 
+                It contains all the instructions and requirements needed to solve the challenge successfully.
+              </p>
             </div>
           </div>
 
