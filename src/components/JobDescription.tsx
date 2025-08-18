@@ -231,18 +231,18 @@ export default function JobDescription({ onNavigateToForm }: JobDescriptionProps
       {/* Submit Challenge CTA */}
       <div className="bg-gradient-to-r from-green-50 to-blue-50 border-2 border-green-200 p-8 rounded-xl text-center">
         <h2 className="text-2xl font-bold text-gray-900 mb-4">
-          ¿Ya completaste el challenge?
+          Already completed the challenge?
         </h2>
         <p className="text-gray-600 mb-6">
-          Si ya descargaste, completaste y desplegaste tu solución, es hora de enviarla para evaluación.
+          If you've already downloaded, completed, and deployed your solution, it's time to submit it for evaluation.
         </p>
         <button
           onClick={onNavigateToForm}
           className="bg-gradient-to-r from-green-600 to-blue-600 text-white px-8 py-4 rounded-xl font-bold text-lg hover:from-green-700 hover:to-blue-700 transform hover:scale-105 transition-all shadow-lg"
         >
-          🚀 Entregar Challenge
+          🚀 Submit Challenge
         </button>
-        <p className="text-sm text-gray-500 mt-3">Envía tu solución aquí para comenzar el proceso de evaluación</p>
+        <p className="text-sm text-gray-500 mt-3">Submit your solution here to start the evaluation process</p>
       </div>
 
       {/* FAQ */}
