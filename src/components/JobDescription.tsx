@@ -1,4 +1,8 @@
-export default function JobDescription() {
+interface JobDescriptionProps {
+  onNavigateToForm: () => void
+}
+
+export default function JobDescription({ onNavigateToForm }: JobDescriptionProps) {
   return (
     <div className="max-h-screen overflow-y-auto pr-4 space-y-8">
       {/* Header */}
@@ -204,7 +208,12 @@ export default function JobDescription() {
             <ul className="space-y-1 text-sm text-gray-600">
               <li>✅ Complete all challenge tasks</li>
               <li>🚀 Deploy to Vercel/Netlify (Optional)</li>
-              <li>📧 Submit your URL + GitHub repo using the form →</li>
+              <li>📧 <button 
+                    onClick={onNavigateToForm}
+                    className="text-blue-600 hover:text-blue-800 underline font-medium"
+                  >
+                    Submit your URL + GitHub repo using the form →
+                  </button></li>
             </ul>
           </div>
 
