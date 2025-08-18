@@ -106,12 +106,6 @@ export default function SubmitChallenge() {
             </div>
             <p>Te contactaremos en las próximas 24-48 horas con los resultados.</p>
           </div>
-          <button
-            onClick={() => setShowSuccess(false)}
-            className="mt-6 px-4 py-2 bg-gray-900 text-white rounded-lg hover:bg-gray-800 transition-colors"
-          >
-            Enviar otro candidato
-          </button>
         </div>
       </div>
     )
