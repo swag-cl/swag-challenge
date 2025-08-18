@@ -91,6 +91,7 @@ export default function JobDescription({ onNavigateToForm }: JobDescriptionProps
               <li>• <strong>Fast execution</strong> - can ship quality code quickly</li>
               <li>• <strong>Problem solver</strong> - doesn't wait for perfect specs</li>
               <li>• <strong>Designer's eye</strong> - can make UX decisions autonomously</li>
+              <li>• <strong>Responsive design</strong> - mobile-first approach required</li>
               <li>• <strong>Tool agnostic</strong> - uses AI, templates, libraries</li>
             </ul>
           </div>
@@ -136,9 +137,9 @@ export default function JobDescription({ onNavigateToForm }: JobDescriptionProps
             <h3 className="font-semibold text-gray-800 mb-2">Payment Structure</h3>
             <ul className="space-y-1 text-sm text-gray-600">
               <li>💰 <strong>25% upfront</strong> after challenge completion</li>
-              <li>💰 <strong>25% at milestone</strong> (main pages functional)</li>
-              <li>💰 <strong>25% at milestone</strong> (integration complete)</li>
-              <li>💰 <strong>25% at delivery</strong> (production ready)</li>
+              <li>💰 <strong>22.5% at milestone</strong> (main pages functional)</li>
+              <li>💰 <strong>22.5% at milestone</strong> (integration complete)</li>
+              <li>💰 <strong>30% at delivery</strong> (production ready)</li>
             </ul>
           </div>
         </div>
