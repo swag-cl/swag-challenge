@@ -4,7 +4,7 @@ interface JobDescriptionProps {
 
 export default function JobDescription({ onNavigateToForm }: JobDescriptionProps) {
   return (
-    <div className="max-h-screen overflow-y-auto pr-4 space-y-8">
+    <div className="max-w-6xl mx-auto space-y-8">
       {/* Header */}
       <div className="bg-gradient-to-r from-blue-600 to-purple-600 text-white p-6 rounded-xl">
         <h1 className="text-3xl font-bold mb-2">🚀 Frontend Developer</h1>
@@ -226,6 +226,23 @@ export default function JobDescription({ onNavigateToForm }: JobDescriptionProps
             </ul>
           </div>
         </div>
+      </div>
+
+      {/* Submit Challenge CTA */}
+      <div className="bg-gradient-to-r from-green-50 to-blue-50 border-2 border-green-200 p-8 rounded-xl text-center">
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">
+          ¿Ya completaste el challenge?
+        </h2>
+        <p className="text-gray-600 mb-6">
+          Si ya descargaste, completaste y desplegaste tu solución, es hora de enviarla para evaluación.
+        </p>
+        <button
+          onClick={onNavigateToForm}
+          className="bg-gradient-to-r from-green-600 to-blue-600 text-white px-8 py-4 rounded-xl font-bold text-lg hover:from-green-700 hover:to-blue-700 transform hover:scale-105 transition-all shadow-lg"
+        >
+          🚀 Entregar Challenge
+        </button>
+        <p className="text-sm text-gray-500 mt-3">Envía tu solución aquí para comenzar el proceso de evaluación</p>
       </div>
 
       {/* FAQ */}

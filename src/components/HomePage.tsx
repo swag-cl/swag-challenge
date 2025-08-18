@@ -7,7 +7,7 @@ interface HomePageProps {
 export default function HomePage({ onNavigateToForm }: HomePageProps) {
   return (
     <div className="min-h-screen bg-gradient-to-br from-gray-50 to-gray-100">
-      <div className="container mx-auto px-4 py-8 max-w-4xl">
+      <div className="px-4 py-8">
         {/* Header */}
         <div className="text-center mb-8">
           <h1 className="text-4xl font-bold text-gray-900 mb-2">🎯 SWAG Challenge</h1>
@@ -16,17 +16,6 @@ export default function HomePage({ onNavigateToForm }: HomePageProps) {
         
         {/* Job Description */}
         <JobDescription onNavigateToForm={onNavigateToForm} />
-        
-        {/* Bottom CTA */}
-        <div className="mt-12 text-center">
-          <button
-            onClick={onNavigateToForm}
-            className="bg-gradient-to-r from-green-600 to-blue-600 text-white px-8 py-4 rounded-xl font-bold text-lg hover:from-green-700 hover:to-blue-700 transform hover:scale-105 transition-all shadow-lg"
-          >
-            🚀 Entregar Challenge
-          </button>
-          <p className="text-sm text-gray-500 mt-2">¿Ya completaste el challenge? Envía tu solución aquí</p>
-        </div>
       </div>
       
       {/* Floating Action Button */}
