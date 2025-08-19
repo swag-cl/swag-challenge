@@ -217,7 +217,7 @@ export default function JobDescription({ onNavigateToForm }: JobDescriptionProps
               git clone https://github.com/swag-cl/frontend-challenge.git<br/>
               cd frontend-challenge<br/>
               npm install<br/>
-              npm start
+              npm run dev
             </div>
             <div className="bg-blue-50 border border-blue-200 p-3 rounded-lg mt-3">
               <p className="text-sm text-blue-800">
